@@ -11,9 +11,9 @@ function grepgems() {
   ag $1 $(rvm gemdir)"/gems"
 }
 
-backupit() {
-    local date=$(date "+%Y_%m_%d")
-    local time=$(date "+%H_%M_%S")
-    mkdir -p ~/backups/"$date" >/dev/null 2>&1
-    mysqldump -c -e --default-character-set=utf8 --single-transaction --add-drop-database -u$2 $1 | gzip > ~/backups/"$date"/"$2"_dump_"$time".gz
+function backupit() {
+  local date=$(date "+%Y_%m_%d")
+  local time=$(date "+%H_%M_%S")
+  mkdir -p ~/backups/"$date" >/dev/null 2>&1
+  mysqldump -c -e --default-character-set=utf8 --single-transaction --add-drop-database -u$2 $1 | gzip > ~/backups/"$date"/"$2"_dump_"$time".gz
 }
