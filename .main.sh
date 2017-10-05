@@ -4,4 +4,4 @@ source ~/.bash_aliases
 source ~/.bash_helpers
 
 [[ -f ~/.current_project ]] && source ~/.current_project
-cd ~/work/$CURRENT_PROJECT
+$CURRENT_PROJECT && cd ~/work/$CURRENT_PROJECT
