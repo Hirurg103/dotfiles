@@ -40,5 +40,5 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 fancy_echo "Installing ag"
 brew install ag
 
-fancy_eacho "Installing imagemagick"
+fancy_echo "Installing imagemagick"
 brew install imagemagick
