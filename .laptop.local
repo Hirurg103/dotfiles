@@ -28,9 +28,8 @@ fancy_echo "Installing yarn"
 brew install yarn
 
 fancy_echo "Installing emacs"
-brew tap railwaycat/homebrew-emacsmacport
-brew install emacs-mac --with-spacemacs-icon
-brew linkapps
+# brew tap railwaycat/homebrew-emacsmacport
+brew cask install emacs-mac-spacemacs-icon
 
 fancy_echo "Configuring spacemacs"
 cd ~
