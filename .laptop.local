@@ -42,3 +42,9 @@ brew install ag
 
 fancy_echo "Installing imagemagick"
 brew install imagemagick
+
+fancy_echo "Installing rbenv"
+brew install rbenv
+rbenv init
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
