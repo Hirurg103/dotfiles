@@ -11,7 +11,7 @@ if [ -f "$HOME/Brewfile.local" ]; then
 fi
 
 fancy_echo "Installing qt"
-brew install qt
+brew install qt --with-qtwebkit
 
 fancy_echo "Installing mysql"
 brew install mysql@5.6
