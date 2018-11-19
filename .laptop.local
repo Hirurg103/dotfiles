@@ -25,6 +25,12 @@ git config --global user.name "Dzmitry"
 git config --global user.email dzmitry.kovalenok@thehamon.com
 git config --global push.default simple
 
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+
 fancy_echo "Installing yarn"
 brew install yarn
 
